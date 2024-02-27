@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href=CSS/s>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger">≡</div>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="article.html">Article</a> </li>
+                <li><a href="gallery.html">Gallery</a> </li>
+
+            </ul>
+        
+        </nav>
+    </header>
+  <main class="photo-gallery">
+    <div class="photo"><img src="Climate-Collage.jpg" alt= "Climate Change themed Collage"> </div>
+    <div class="photo"><img src="Climate Change.jpg" alt="Trifold formatted photo concerning climate change"> </div>
+    <div class="photo"><img src="girl-saves-guy.jpg" alt="Emma saves Liam from drowning"></div>
+  <div class="gallery-controls">
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+  </div>
+</main> 
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function (){
+        document.querySelector('nav ul').classList.toggle('active');
+    });
+</script>
+</body>
+</html>
